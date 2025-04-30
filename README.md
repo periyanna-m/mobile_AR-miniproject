@@ -20,6 +20,31 @@ Dynamic user control through an easy-to-use HUD panel.
 Augmented reality placement with surface detection.
 
 Automatic tree scaling for better visual impact.
+🌱 What an L-System Generator Does:
+Starts with an initial string (axiom)
+Example: F
+
+Applies production rules repeatedly over several iterations
+Example rule: F → F[+F]F[-F]F
+After a few iterations, the string becomes more complex.
+
+Interprets the final string as drawing instructions
+
+F: Draw a branch segment
+
++: Turn right by a certain angle
+
+-: Turn left by a certain angle
+
+[: Save the current position and angle (push onto a stack)
+
+]: Restore position and angle (pop from stack)
+
+Builds a 3D tree in Unity using the instructions
+
+The string is converted into geometry (branches, trunk, etc.)
+
+Parameters like angle, length, width, and variance affect shape
 
 Supports customization and interaction within an immersive environment.
 ![WhatsApp Image 2025-04-28 at 23 45 25_43ae8439](https://github.com/user-attachments/assets/0989dd82-05c9-4bfe-ab79-26efd983dfed)
